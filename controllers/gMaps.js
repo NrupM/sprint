@@ -5,10 +5,9 @@ function getTransitDirections(req, res) {
     console.log('getTransitDirections via maps controller', req.body);
     const originLat = req.query.originLat;
     const originLng = req.query.originLng;
-    const destinationLat = req.query.destinationLat;
-    const destinationLng = req.query.destinationLng;
+    const destination = req.query.destination;
     const mode = req.query.mode;
-    const newUrl = `https://maps.googleapis.com/maps/api/directions/json?origin=${originLat},${originLng}&destination=${destinationLat},${destinationLng}&key=AIzaSyCnyu2FJac70-X0EXKaoIxVw5RB4luN0uk&mode=${mode}`;
+    const newUrl = `https://maps.googleapis.com/maps/api/directions/json?origin=${originLat},${originLng}&destination=${destination}&key=AIzaSyCnyu2FJac70-X0EXKaoIxVw5RB4luN0uk&mode=${mode}`;
 
     console.log(newUrl);
     res.header('Access-Control-Allow-Origin', '*');
