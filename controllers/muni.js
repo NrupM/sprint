@@ -7,8 +7,7 @@ function updateVehicles() {
         .then((data) => {
             vehiclesResponse = data;
             // wait 5 seconds to update
-            // setInterval
-            // setTimeout(updateVehicles, 5000);
+            setInterval(updateVehicles, 5000);
         })
         .catch((error) => console.log(`There has been a problem with your fetch operation: ${error.message}`));
 }
