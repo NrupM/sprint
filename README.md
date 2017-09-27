@@ -49,7 +49,7 @@ The app was designed for mobile accessability
 * [Heroku](https://www.heroku.com/home) - Deploment platform
 * [Uber API](https://developer.uber.com/) - Access core capabilities of the Uber app (feature started but not yet supported)
 
-## User Stories:
+## User Stories
 
 1. A user can enter a destination, get arrival times for both driving and public transit options and be shown an indicator as to which travel option would be faster at that time. 
 
